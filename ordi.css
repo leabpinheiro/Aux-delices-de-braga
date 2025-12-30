@@ -1,0 +1,605 @@
+:root {
+    --first-color: #0e0e43;
+    --second-color: #FFD700;
+    --third-color: #f7f7f7;
+    --fourth-color: #FFFFFF;
+    --font-title: 'merriweather', serif;
+    --font-text: 'inter', arial, sans-serif;
+    
+}
+
+
+nav {
+    background-color: var(--third-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav h1 {
+    font-family: var(--font-title);
+    color: var(--first-color);
+    font-size: 300%;
+    font-weight: bold;
+}
+
+nav h2 {
+    font-family: var(--font-text);
+    color: var(--first-color);
+    font-size: 100%;
+}
+
+#titre {
+    color: var(--first-color);
+    padding: 0.5rem 1rem;
+
+}
+
+#ancres {
+    gap: 1rem;
+    display: flex;
+}
+
+#ancres a {
+    text-decoration: none;
+    color: var(--first-color);
+    font-family: var(--font-text);
+    font-size: 100%;
+}
+
+#ancres a:hover {
+    color: var(--second-color);
+    transition: 0.3s;
+}
+
+#ancres a:active {
+    color: var(--second-color);
+    font-weight: bold;
+}
+#reservation {
+   background: #00008B;
+    background: linear-gradient(90deg, rgba(0, 0, 122, 1) 15%, rgba(172, 201, 250, 1) 100%);
+    color: var(--fourth-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: var(--font-text);
+    margin-left: 5rem;
+}
+
+header {
+    background-image: url('chaise.png');
+    background-size: 100% auto;
+    background-position: center 20%;
+    height: 80vh;
+    text-align: center;
+    padding: 2rem;
+    color: var(--fourth-color);
+}
+
+header h1 {
+    font-family: var(--font-title);
+    color: var(--fourth-color);
+    font-size: 500%;
+    margin-top: 5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+span {
+    color: var(--second-color);
+}
+
+header h2 {
+    font-family: var(--font-text);
+    font-size: 150%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin-top: 1rem;
+    font-weight: lighter;
+    
+}
+
+header p {
+    font-family: var(--font-text);
+    font-size: 120%;
+    margin: 3rem 15%;
+
+}
+
+header button {
+
+    color: var(--first-color);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 120%;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 1rem;
+
+}
+
+header button:hover {
+    background-color: var(--second-color);
+    transition: 0.3s;
+}
+
+header button:active {
+    background-color: var(--second-color);
+    font-weight: bold;
+}
+
+#decouvrir-menu {
+    background: #00008B;
+    background: linear-gradient(90deg, rgba(0, 0, 122, 1) 15%, rgba(172, 201, 250, 1) 100%);
+    color: var(--fourth-color);
+}
+#reservation-header {
+    background: #FFD700;
+    background: linear-gradient(90deg, rgba(255, 215, 0, 1) 15%, rgba(255, 241, 163, 1) 100%);
+    
+}
+main {
+    background-color: var(--third-color);
+    padding: 2rem 0;
+}
+section#histoire h1 {
+    font-family: var(--font-title);
+    color: var(--first-color);
+    font-size: 4rem;
+    font-weight: bold;
+    text-decoration: var(--second-color) underline;
+    text-underline-offset: 30px;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+section#histoire h2 {
+    font-family: var(--font-text);
+    color: var(--first-color);
+    font-size: 120%;
+    font-weight: lighter;
+    margin: 0 15%;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 4rem;
+    opacity: 0.6;
+}
+section#histoire h3 {
+    font-family: var(--font-title);
+    color: var(--first-color);
+    font-size: 160%;
+    margin: 3rem 2rem 2rem;
+    opacity: 0.9;
+}
+section#histoire p {
+    font-family: var(--font-text);
+    font-size: 110%;
+    margin: 0 60% 0.5rem 2rem;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+section#temoignages {
+    position: absolute;
+    right: 0%;
+    top: 170%;
+    left: 60%;
+    z-index: 1;
+}
+section#temoignages blockquote {
+    position : absolute;
+    right:15%;
+    top: 80%;
+    left: 2%;
+    font-size: 120%;
+    z-index: 1;
+    color: var(--fourth-color);
+    line-height: 1.5;
+}
+
+section#valeurs{
+    border: 1px solid rgb(200, 200, 200);
+    background-color: var(--fourth-color);
+    height: 15rem;
+    width: 25rem;
+    border-radius: 10px;
+    justify-content: center;    
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+section#valeurs h4{
+    font-family: var(--font-title);
+    color: var(--first-color);
+    font-size: 130%;
+    margin: 0 1.5rem;
+    font-weight: bold;
+    opacity: 0.8;
+}
+section#valeurs ul{
+    font-family: var(--font-text);
+    color: var(--first-color);
+    font-size: 90%;
+    margin: 1rem 1.5rem 1rem 2rem;
+    line-height: 1.5;
+    opacity: 0.7;
+        
+}
+section#valeurs ul li::marker {
+    content: "• ";
+    font-size: 1.5rem;
+    color: var(--second-color);
+    margin-right: 0.5rem; 
+}
+section#menu h1{
+    font-family: var(--font-title);
+    color: var(--first-color);
+    font-size: 4rem;
+    font-weight: bold;
+    text-decoration: var(--second-color) underline;
+    text-underline-offset: 30px;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+section#menu h2{
+    font-family: var(--font-text);
+    color: var(--first-color);
+    font-size: 120%;
+    font-weight: lighter;
+    margin: 0 15%;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 4rem;
+    opacity: 0.6;
+   
+}
+section#menu h3 {
+    font-family: var(--font-title);
+    color: var(--first-color);
+    font-size: 2.5rem;
+    margin: 3rem 2rem 2rem;
+    opacity: 0.9;
+    text-align: center;
+}
+section#menu h4 {
+    font-family: var(--font-title);
+    color: var(--first-color);
+    font-size: 1.5rem;
+    margin: 1rem 2rem 0.5rem;
+    opacity: 0.6;
+    text-align: center;
+}
+#cards-entrees , #cards-plats , #cards-desserts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2rem 2rem 4rem;
+}
+.card{
+    border: 2px solid rgb(146, 146, 146);
+    color: var(--first-color);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--fourth-color);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+.card-header h5 {
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    margin: 0rem;
+    font-weight: bold;
+}
+.card-header p {
+    font-family: var(--font-text);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.card-header span {
+    color: var(--second-color);
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    border-radius: 15px;
+    border: 2px solid var(--second-color);
+    font-size: 0.8rem;
+}
+.card-description p {
+    font-family: var(--font-text);
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.4;
+    opacity: 0.8;
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+h6 {
+    font-family: var(--font-title);
+    color: var(--first-color);
+    font-size: 1.50rem;
+    font-weight: bold;
+    margin: 4rem 0 2rem;
+    text-align: center;
+}
+#infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem 0;
+}
+.card-infos {
+   
+    color: var(--first-color);
+    border-radius: 10px;
+    padding: 1rem;
+     
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 2rem;
+    align-items: center;
+}
+.card-infos h6 {
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    margin: 0rem;
+    font-weight: bold;
+    text-decoration: var(--second-color) underline;
+    text-underline-offset: 10px;
+    opacity: 0.8;
+}
+.card-infos p {
+    font-family: var(--font-text);
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.4;
+    opacity: 0.7;
+    text-align: center;
+}
+section#galerie h1{
+    font-family: var(--font-title);
+    color: var(--first-color);
+    font-size: 4rem;
+    font-weight: bold;
+    text-decoration: var(--second-color) underline;
+    text-underline-offset: 30px;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    text-align: center;
+   
+}
+#galerie h2{
+    font-family: var(--font-text);
+    color: var(--first-color);
+    font-size: 120%;
+    font-weight: lighter;
+    margin: 0 15%;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 4rem;
+    opacity: 0.6;
+   
+}
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 2rem 4rem;
+    justify-content: center;
+    
+  
+}
+.photos img {
+    display: block;
+    border-radius: 10px;
+   
+     
+}
+.photos img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+.photo .overlay {
+    position: absolute;
+    top: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.photo:hover .overlay {
+    opacity: 1;
+}
+#contact {
+    background-color: var(--third-color);
+    padding: 2rem 0;
+    text-align: center;
+    border: #a0b7c7 1px solid;
+    margin: 2rem 25%;
+    border-radius: 10px;
+}
+#contact h1 {
+    font-family: var(--font-title);
+    color: var(--first-color);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+
+}
+#contact h2 {
+    font-family: var(--font-text);
+    color: var(--first-color);
+    font-size: 1rem;
+    margin: 0 10%;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+#telephone{
+    background: #00008B;
+    background: linear-gradient(90deg, rgba(0, 0, 122, 1) 15%, rgba(172, 201, 250, 1) 100%);
+    color: var(--fourth-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: var(--font-text);
+    margin: 2rem 1rem 4rem;
+}
+#contact-email{
+     background: #FFD700;
+    background: linear-gradient(90deg, rgba(255, 215, 0, 1) 15%, rgba(255, 241, 163, 1) 100%);
+    color: var(--fourth-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: var(--font-text);
+    margin: 2rem 1rem 4rem;
+}
+#telephone:hover, #contact-email:hover {
+    background-color: var(--second-color);
+    transition: 0.3s;
+}
+#telephone:active, #contact-email:active {
+    background-color: var(--second-color);
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--first-color);
+    color: var(--fourth-color);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px;
+    margin-bottom: 1rem;
+    gap: 32px;
+    border-bottom: 2px solid grey
+ }
+footer h1 {
+    font-family: var(--font-title);
+    color: var(--fourth-color);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+footer h2, footer h3, footer h5 {
+    font-family: var(--font-title);
+    color: var(--second-color);
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    
+    
+}
+footer p {
+    font-family: var(--font-text);
+    color: var(--fourth-color);
+    font-size: 1rem;
+    margin-right: 4rem;
+    line-height: 1.5;
+    opacity: 0.8;
+   
+}
+footer ul {
+       
+    margin: 5px 0 0 20px;
+    line-height: 1.5;
+    font-family: var(--font-text);
+    opacity: 0.8;
+}
+footer ul li::marker {
+    content: "• ";
+    font-size: 1.2rem;
+     
+}
+footer h4 {
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+#footer-ancres {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+        
+} 
+#footer-ancres a {
+    text-decoration: none;
+    color: var(--fourth-color);
+    font-family: var(--font-text);
+    font-size: 100%;
+}
+#footer-ancres a:hover {
+    color: var(--second-color);
+    transition: 0.3s;
+}   
+#footer-ancres a:active {
+    color: var(--second-color);
+    font-weight: bold;
+}
+footer #footer-bottom p{
+    text-align: center;
+    margin: 1rem;   
+    font-size: 1rem;
+    opacity: 0.7;
+    font-family: var(--font-text);
+
+}
+
+
