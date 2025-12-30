@@ -76,7 +76,7 @@ nav h2 {
 }
 
 header {
-    background-image: url('chaise.png');
+    background-image: url('/images/chaise.png');
     background-size: 100% auto;
     background-position: center 20%;
     height: 80vh;
